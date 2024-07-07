@@ -1,3 +1,5 @@
 streamlit
 networkx
-collections
+pandas_datareader
+plotly
+setuptools
