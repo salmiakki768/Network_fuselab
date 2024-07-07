@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import networkx as nx
 import pandas as pd
@@ -7,8 +8,9 @@ from collections import deque
 import math
 
 # CSVファイルのパスを指定
-article_master_path = 'data/記事マスタ_20240610.csv'
-adjacency_matrix_path = 'data/隣接行列_20240610.csv'
+data_path = os.path.join(os.path.dirname(__file__), '..', 'data')
+article_master_path = os.path.join(data_path, '記事マスタ_20240610.csv')
+adjacency_matrix_path = os.path.join(data_path, '隣接行列_20240610.csv')
 
 # データの読み込み
 blog_masta = pd.read_csv(article_master_path)

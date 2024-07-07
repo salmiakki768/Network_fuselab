@@ -23,4 +23,4 @@ venv.bak/
 .DS_Store
 
 # Data files
-data/*.csv
+# data/*.csv
